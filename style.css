@@ -1,0 +1,213 @@
+/* common css */
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol {
+    list-style-type: none;
+}
+.header{
+    background-color: rgb(0, 5, 1);
+    width:100%; 
+}
+.container{
+    width:1320px; 
+    
+    margin: 0 auto;
+
+}
+.menu{
+    text-align:center;
+    justify-content: center;
+    height:70px;
+    display: flex;
+}
+.menu ul li{
+    display: inline-block;
+    
+}
+.navigation li a{
+    color:rgb(175, 248, 38);
+    padding: 0 30px;
+    line-height: 75px;
+    text-decoration: none;
+    font-family: "Bodoni Moda SC";
+    font-weight: 625;
+
+}
+
+
+.action-btn li a{
+    color: lime;
+    background-color: rgb(23, 58, 6);
+
+    border-radius: 6px;
+    margin-left: 200px;
+    padding: 9px 20px;
+    line-height: 75px;
+    text-decoration: none;
+    font-family: "Faustina";
+    font-weight: 800;
+    
+
+}
+.navigation li a:hover{
+    color: green;
+    transition: 0.7s;
+}
+.logo{
+    background-image: url(images/freepik__retouch__42041.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: -15px 1px;
+    padding: 10px;
+    width: 80px;
+    height:80px;
+    
+
+}
+.container2{
+    display: flex;
+    justify-content: space-between;
+    
+    width: 1320px;
+    margin: 0 auto;
+    position:relative;
+    overflow: hidden;
+    
+}
+.banner1{
+    background-image: url(images/chef-food.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    margin: 45px;
+    width: 300%;
+    
+}
+.bannertext{
+    text-align:left;
+    margin: 200px 50px;
+    font-size: 20px;
+    line-height: 45px;
+    font-family: sans-serif;
+}
+.container2::after {       /*overlay*/
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(33, 97, 25, 0.6);  
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 5; 
+}
+  
+.container2:hover::after {      /*overlay hover*/
+    opacity: 1;
+}
+
+
+.overlay-content {                 /*overlay contents(slogan)*/
+    position: absolute;
+    z-index: 6;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(128, 255, 96);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    width: 80%;
+    max-width: 600px;
+}
+  
+.container2:hover .overlay-content {   
+    opacity: 1;
+}
+  
+.overlay-content p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+  
+.learn-more {
+    padding: 10px 25px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
+.container3{
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+    background-color: rgb(1, 12, 2);
+    width: 100%;
+    padding: 40px 0; 
+}
+.container3 .endlist2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 20px; 
+}
+
+.container3 .endlist2 ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 190px;
+}
+
+.container3 .endlist2 li {
+    font-size: 2rem;
+}
+
+.container3 .endlist2 li a {
+    padding: 0; 
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+.container3  .address h5{
+    color: rgb(175, 248, 38);
+    font-size: 30px;
+    font-weight: 500;
+    padding-left: 150px;
+    
+    
+    
+}
+.container3 .address ul li{
+    color:rgb(175, 248, 38);
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 150px;
+    
+}
+.container3 .Contactus h5{
+    color: rgb(175, 248, 38);
+    font-size: 30px;
+    font-weight: 500;
+    padding-left: 200px;
+    
+}
+.container3 .Contactus ul li{
+    color:rgb(175, 248, 38);
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 200px;
+    
+}
